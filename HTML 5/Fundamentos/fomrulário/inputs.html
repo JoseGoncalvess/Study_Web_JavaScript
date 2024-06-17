@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs no HTML</title>
+</head>
+
+<body>
+    <h1>Inputs no HTML</h1>
+    <form>
+        <!--CAMPO DE TEXTO-->
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <!--CAMPO DE EMAIL-->
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <!--CAMPO DE SENHA-->
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <!--CAMPO DE SELEÇÂO RADIO-->
+        <h3>Gêneros:</h3>
+        <input type="radio" name="masculino" id="masculino" value="H">
+        <label for="masculino">Masculino</label>
+        <br>
+
+        <input type="radio" name="masculino" id="feminino" value="M">
+        <label for="feminino">Feminino</label>
+        <br>
+        <!--CAMPO DE SELEÇÂO MULTIPLA-->
+        <h3>Interesses:</h3>
+        <input type="checkbox" name="backend" id="backend" value="backend">
+        <label for="backend">Backend</label>
+        <input type="checkbox" name="fontend" id="fontend" value="fontend">
+        <label for="backend">Frontend</label>
+        <input type="checkbox" name="mobile" id="mobile" value="mobile">
+        <label for="backend">Mobile</label>
+
+        <!--CAMPO DE DATA-->
+        <br>
+        <h3>Data de Nascimento:</h3>
+        <label for="DataDeNascimento">Data:</label>
+        <input type="date" name="DataDeNascimento" id="DataDeNascimento">
+        <br>
+        <br>
+
+        <!--CAMPO DE FILE-->
+        <label for="file"> Currículo</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <br>
+        
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
