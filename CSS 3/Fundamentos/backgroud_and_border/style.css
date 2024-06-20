@@ -1,0 +1,38 @@
+body{
+    background-image: url(
+        "https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?auto=compress&cs=tinysrgb&w=6000&h=1000&dpr=3"
+    );
+    background-size:cover;
+}
+header{
+    background-color: #333;
+    color: #ffff;
+}
+main{
+    background-color: #e5e5e5;
+    border-width: 4px;
+    border-color: #1c1a1d;
+    border-style: solid;
+}
+
+
+.box1{
+    background-color: #086708;
+    width: 300px;
+    height: 100px;
+    border: #1c1a1d 4px solid;
+}
+.box2{
+    background-image: linear-gradient(to right,#848080, rgb(154, 9, 9));
+    width: 300px;
+    height: 100px;
+    border: #1c1a1d 4px dashed;
+}
+.box3{
+    background-color: #0077ff;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 300px;
+    height: 100px;
+    border: #1c1a1d 4px dotted;
+}
