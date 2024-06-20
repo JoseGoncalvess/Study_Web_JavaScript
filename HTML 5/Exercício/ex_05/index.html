@@ -12,17 +12,17 @@
     <form>
         <label for="name"><strong>Nome:</strong></label>
         <br>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
         <br>
         <br>
         <label for="email"><strong>Email:</strong></label>
         <br>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email"required>
         <br>
         <br>
         <label for="whats"><strong>WhatsApp:</strong></label>
         <br>
-        <input type="number" name="whats" id="whats">
+        <input type="number" name="whats" id="whats"required>
         <br>
         <br>
         <label for=""><strong>Áreas de Atuações:</strong></label>
@@ -31,7 +31,7 @@
         <input type="radio" name="QA" id="QA" value="QA">
         <label for="QA">Quality Assurance(QA)</label>
 
-        <input type="radio" name="DT_analityc" id="DT_analityc" value="DT_analityc">
+        <input type="radio" name="DT_analityc" id="DT_analityc" value="DT_analityc" >
         <label for="DT_analityc">Análise de Dados</label>
 
         <input type="radio" name="infra" id="infra" value="infra">
@@ -41,11 +41,14 @@
         <br>
         <label for="Observações"><strong>Observações</strong>:</label>
         <br>
-        <textarea name="Observações" id="Observações" placeholder="Fale sobre você..."></textarea>
+        <textarea name="Observações" id="Observações" placeholder="Fale sobre você..." required></textarea>
 
         <br>
-        <input type="checkbox" name="desejo" id="">
+        <input type="checkbox" name="desejo" id="" required>
         <label for="desejo">Desejo receber novidades e Ofertas por Email.</label>
+        <br>
+        <input type="checkbox" name="LGPD" id="" required>
+        <label for="LGPD">Concordo com as Políticas de privacidades.</label>
         <br>
         <button type="submit"> Enviar</button>
     </form>
