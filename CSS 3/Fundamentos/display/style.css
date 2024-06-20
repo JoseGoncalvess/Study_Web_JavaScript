@@ -1,0 +1,19 @@
+.inline{
+    /* Ocupa so o espaço necessario, não quebrando de
+     linha nem aceita margim e preenchimento vertical */
+    display: inline;
+}
+/* Ocupa so o espaço necessario,  quebrando 
+     linha e aceita margim e preenchimento vertical */
+.block {
+    display: block;
+    padding: 20px;
+}
+
+/* Não quebra linha mas ele aceita penchimento e margim vertial */
+
+.inline-block{
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 20px;
+}
