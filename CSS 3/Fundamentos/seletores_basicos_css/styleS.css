@@ -1,0 +1,71 @@
+/* SELETOR UNIVERSAL- PERMITE APLICAR STILO EM TODOS OS ELEMNETOS AO MESMO TEMPO,IMPORTANTE 
+NORMALIZAÇÕA DO ESTILO DO NAVEGADOR */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* SELETOR TAG */
+header, footer{
+    background-color: #282727;
+    color: white;
+    padding: 15PX;
+}
+/* SELETOR DE ELEMENTOS ANINHADOS - pego um elemneto que esta dentro do seu antecessor */
+nav a{
+color: chocolate;
+font-style: italic;
+}
+
+/* PERMITE SELECIONAR O FILHO DAS TAGS  ESPECIFICANDO QUEM É O PAI E QUEM É O FILHO*/
+nav > a {
+    display: block;
+    color: purple;
+    padding: 10px;
+
+}
+
+/* SELECIONAR POR CLASSE ESPECIFICA */
+.laranja{
+    color: orange;
+}
+.verde{
+    color: chartreuse;
+}
+
+/* SELECIOANR POR ID POR MEIO DA # */
+#secao-principal{
+    text-align: center;
+}
+/* PODEMOS COMBINAR OS SELETORES */
+
+#secao-principal > *{
+    margin-top: 10px;
+}
+
+/* SELETOR DE SEQUÊNCIA */
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+
+input + input{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: green;
+}
+
+h2 + p{
+    display: block;
+    margin-top: 30px;
+   background-color: green;
+   color: aliceblue;
+}
+
+/* SELETORES DE PROPRIEDADES DOS ELEMENTOS */
+input[type="text"]{
+    background-color: purple;
+    border-radius: 12px;
+
+}
