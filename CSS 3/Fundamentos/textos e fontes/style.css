@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    text-decoration: underline chartreuse;
+    text-transform: uppercase;
+}
+h1{
+    font-family:'Times New Roman', Times, serif, sans-serif;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif
+}
+.bold{
+    font-weight: 700;
+    color: #058a22;
+}
+.italic{
+    color: #025391;
+    font-style: italic;
+    font-weight: 500;
+}
