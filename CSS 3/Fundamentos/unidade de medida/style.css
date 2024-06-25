@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #232323;
+    color: white;
+    padding: 10px;
+    /* Não é recomendada devido a ser uma unidade absoluta,
+     e pode da divergencia em outros view */
+}
+
+.box{
+    border: 1px solid #232323;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 75px;
+}
+.px{
+    height: 10px;
+}
+
+/* abreviação de root element  -> Senod [tamanho padrão do navegador] * rem.
+    ele tambem aceira tabulação por virgula
+*/
+.rem{    
+height: 3rem;
+
+}
+
+
+/*  Sendo sua principal diferença em relçaão ao rem e que ele cnsiidera o tamnho base do elemento, que nesse caso seria fonte do texto.
+Um bom caso de uso seria quanod temos elementos que podem ter seu conteúdo varievel
+*/
+.em{
+height: 2em;
+}
+
+/* Esta medidad ultiliza a medida padrão do elemneto pai senod ela nesse caso a section */
+.father{
+    height: 5em;
+    background-color: bisque;
+}
+.percent-33{
+    height: 33%;
+}
+
+.percent-66{
+    height: 66%;
+}
+
+.percent-100{
+    height: 100%;
+}
+
+/* Uma observação seria na busca pela respanssividade fazer uso da % em ves do vw e vh pois podem apresentar um comportamento estranho em diverssos dispositivos.*/
+
+
+
+
+/* viewm port heigth */
+.vh{
+    height: 30vh;
+
+}
+
+/* view port wigth */
+
+.vw{
+    width: 50vw;
+
+}
+   
