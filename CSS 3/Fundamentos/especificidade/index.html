@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Especificidade</title>
+</head>
+<body>
+    <h1 style="color: aqua;" class="roxo" id="laranja">Especificidade</h1>
+    <p>
+        Hierarquicamente o estilo a seguir sera sempre  a seguinte sequencia:
+    </p>
+    <ol>
+        <li>Inline</li>
+        <li>Folha de style</li>
+        <li>ID</li>
+        <li>Classe</li>
+        <li>Somatoria de Especificidade</li>
+        <li>Tag</li>
+        
+    </ol>
+
+    <div>
+        <h4> Importante:</h4>
+        <p>Caso precise explicitar que algum estilo deve ser considerado independente de hierarquia devi usar a tag <span class="imp">!important</span> asim sobrepondo qualquer especificidade.</p>
+
+        <span class="waring">Não é um boa pratica o uso do memso demasiadamente pois tira o real ojetivo do mesmo!</span>
+    </div>
+    
+</body>
+</html>

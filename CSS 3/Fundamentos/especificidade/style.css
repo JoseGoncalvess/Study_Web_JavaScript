@@ -1,0 +1,35 @@
+body{
+font-family:  Geneva, Tahoma, sans-serif;
+
+}
+#laranja{
+    color: orange;
+}
+
+.roxo{
+    color: purple !important;
+}
+body > h1{
+    color: green;
+}
+
+h1{
+    color: blue;
+    
+}
+p{
+    font-weight: 600;
+}
+
+.imp{
+    color: brown;
+    font-style: italic;
+}
+
+.waring{
+    background-color: #232323;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: 5px;
+}
