@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header-father{
+    background-color: #232323;
+    color: rgb(190, 54, 0);
+    text-align: center;
+}
+.inside{
+    color: #d3be01;
+    border: solid 2px red;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.div-father{
+    background-color: cadetblue;
+    color: #fff;
+}
