@@ -1,0 +1,35 @@
+:root{
+    --color-primary: #053dc1;
+    --color-secundary: #909296;
+    --color-themer-White: #ffffff;
+    --color-themer-Black: #363636;
+    --padding-small: 0.5rem 1rem;
+    --padding-mediun: 2rem;
+    --padding-large: 4rem;
+}
+
+body{
+    background-color: var(--color-themer-White);
+}
+header{
+    background-color: var(--color-themer-Black);
+    color: #fff;
+    padding: var(--padding-mediun);
+}
+
+section{
+    background-color: var(--color-secundary);
+    padding: var(--padding-small);
+    text-align: center;
+}
+div{
+    background-color: #053dc1;
+    color: #fff;
+}
+
+/* Sobrescrever os valores das variaveis em contextos especificos */
+
+.red-box{
+    --color-primary:#b00707;
+    background-color: var(--color-primary);
+}
