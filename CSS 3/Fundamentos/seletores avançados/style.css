@@ -1,0 +1,32 @@
+/* Seletor :nth-child() permite selecionar um filho especifico */
+li:nth-child(2){
+    color: #166af2;
+}
+/* Esse N é como se fosse uma mutiplicação mas posso efetuar operações matematicas (2n -1) 
+    par : odd ou impar: eve
+*/
+li:nth-child(2n-1){
+    color: #101010;
+}
+/* Seletores de estados esse e uma aplicação  para um comportamento apos fazer algo */
+li:hover{
+    color: #fff;
+    background-color: #166af2;
+}
+/* Pseudo elementos ::after e ::before */
+li::before{
+    content: "Antes ";
+    color: red;
+}
+li::after{
+    content: " Depois";
+    color: #efeb00;
+}
+
+li:last-child(){
+    color: #df1adf;
+}
+
+li:first-child{
+    color: #03c9d7;
+}
