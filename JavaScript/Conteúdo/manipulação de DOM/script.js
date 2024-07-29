@@ -36,6 +36,7 @@ function addContact(){
     addressLi.appendChild(addressinput)
     ul.appendChild(addressLi)
     ul.appendChild(document.createElement('br'))
+    
 
     contactsection.append(h3,ul)
 
