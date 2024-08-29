@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1{
+    text-align: center;
+    padding: 1rem;
+  }
+
+#game-input{
+padding: 1rem;
+align-items: center;
+display: flex;
+justify-content: space-evenly;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    grid-template-columns: 6rem 6rem 6rem;
+    background-color: #232323;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+}
+
+#gameBoard span{
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#roud{
+    display: flex;
+    justify-content: center;
+    padding:  1rem 1rem;
+}
+
+#gameBoard span.win{
+    background-color: #078907;
+    color: #fff;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
