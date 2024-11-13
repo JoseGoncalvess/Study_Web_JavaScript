@@ -24,4 +24,5 @@ console.log(user.friends[0].phone?.ddd)
 // se eu coloco "?." ele verifica o item s enão for numo ele consegue ler o priximo retornaod  undefinids
 console.log(user?.brothers?.length)
 
+// o conceito s epalica tambem a index de um array
 console.log(user.brothers?.[5].name)
