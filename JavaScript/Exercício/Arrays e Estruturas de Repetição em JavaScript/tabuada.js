@@ -9,13 +9,3 @@ for (let index = 0; index < 11; index++) {
 
 console.log(tabuada.join("\n"));
 
-
-// const numerosPares = [];
-// for (let i = 0; i < 10; i = i + 2) {
-//     numerosPares.push(i);
-// }
-
-// console.log(numerosPares);
-
-
-const numerosPares = []; for (let i = 0; i < 10; i++) { const numeroPar = i % 2 === 0; if (numeroPar) { numerosPares.push(i); } } console.log(numerosPares);
