@@ -1,6 +1,7 @@
 let pokemonlist = document.getElementById("pokemon__List")
 let btnSearch = document.getElementById("pokemon_btn_search")
 
+
 let offset = 0
 const limit = 15
 
@@ -84,9 +85,13 @@ pokeapi.loadMoreBtn.addEventListener("click", () => {
 function getPokemon(identifier) {
     try {
         pokeapi.getPokemon(identifier).then(pokemon => pokemonlist.innerHTML = createdPokemonCard(pokemon)).catch(error => {
-            pokemonlist.innerHTML = ` <li class="erro__pokemon">
+            let contente = document.getElementsByClassName("container")[0];
+            contente.setAttribute("style", "justify-content: center;padding: 2rem; ")
+            pokeapi.loadMoreBtn.setAttribute("style", "display:none;")
+            pokemonlist.parentElement.removeChild(pokemonlist);
+            contente.innerHTML = `<div class="erro__pokemon" >
                 <p>ERRO AO CONSULTAR POKEMON</p>
-                <span>NOT FOUD</span> </li>`
+                <span>NOT FOUD</span> </div>`
         })
     } catch (error) {
         console.log(error);
