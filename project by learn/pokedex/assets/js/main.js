@@ -1,4 +1,11 @@
 let pokemonlist = document.getElementById("pokemon__List")
+let btnSearch = document.getElementById("pokemon_btn_search")
+
+let offset = 0
+const limit = 15
+
+const masxRecordPokemon = 151
+
 
 function GetColorPokemo(type) {
     switch (type) {
@@ -51,8 +58,43 @@ function createdPokemonCard(pokemon) {
         </li >
         `;
 }
+function LoadPokemon(limit, offset) {
+    pokeapi.getAllPokemons(limit, offset).then(pokemons => {
+        let newhtml = pokemons.map((pokemon) => createdPokemonCard(pokemon)).join("")
+        pokemonlist.innerHTML += newhtml
+    })
+}
+LoadPokemon(limit, offset)
 
-pokeapi.getAllPokemons(151, 0).then(pokemons => {
-    let newhtml = pokemons.map((pokemon) => createdPokemonCard(pokemon)).join("")
-    pokemonlist.innerHTML += newhtml
+
+
+pokeapi.loadMoreBtn.addEventListener("click", () => {
+    let listPokemon = pokemonlist.children.length
+    offset += limit
+    const qtdRecord = listPokemon + limit
+    if (qtdRecord >= masxRecordPokemon) {
+        const newLimit = masxRecordPokemon - listPokemon
+        LoadPokemon(newLimit, offset)
+        pokeapi.loadMoreBtn.parentElement.removeChild(loadMore)
+    } else {
+        LoadPokemon(limit, offset)
+    }
+})
+
+function getPokemon(identifier) {
+    try {
+        pokeapi.getPokemon(identifier).then(pokemon => pokemonlist.innerHTML = createdPokemonCard(pokemon)).catch(error => {
+            pokemonlist.innerHTML = ` <li class="erro__pokemon">
+                <p>ERRO AO CONSULTAR POKEMON</p>
+                <span>NOT FOUD</span> </li>`
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+btnSearch.addEventListener("click", () => {
+    const pokemonValue = document.getElementById("pokemon__search").value
+    getPokemon(pokemonValue)
+
 })

@@ -15,8 +15,8 @@
 <body>
     <h1 class="Title__page">Pokedex</h1>
     <div class="searc__pokemon">
-        <input type="text" name="pokemon" id="pokemon" placeholder="Digite o nome do Pokemon">
-        <button type="submit">Search</button>
+        <input type="text" name="pokemon" id="pokemon__search" placeholder="Digite o nome do Pokemon">
+        <button type="submit" id="pokemon_btn_search">Search</button>
     </div>
 
     <section class="container">
@@ -24,6 +24,9 @@
 
         </ol>
     </section>
+    <div class="load__more__container">
+        <button type="button" id="loadMore" class="load__more__btn">Load More</button>
+    </div>
     <script src="./assets/models/pokemonModel.js"></script>
     <script src="assets//js/service_pokeAPI.js"></script>
     <script src="assets//js/main.js"></script>

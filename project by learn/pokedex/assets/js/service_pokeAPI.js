@@ -1,4 +1,5 @@
 const pokeapi = {}
+pokeapi.loadMoreBtn = document.getElementById("loadMore")
 
 function PokemonFromPokeModel(pokemonDetails) {
     return new Pokemon(
@@ -25,3 +26,11 @@ pokeapi.getAllPokemons = (limit = 0, offset = 0) => {
             console.log(error);
         });
 }
+
+pokeapi.getPokemon = (identifier) => {
+    return fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`)
+        .then(response => response.json())
+        .then(data => PokemonFromPokeModel(data))
+        .catch(error => new Error(error));
+}
+
