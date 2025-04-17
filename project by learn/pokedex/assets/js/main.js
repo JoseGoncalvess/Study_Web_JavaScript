@@ -84,15 +84,27 @@ pokeapi.loadMoreBtn.addEventListener("click", () => {
 
 function getPokemon(identifier) {
     try {
-        pokeapi.getPokemon(identifier).then(pokemon => pokemonlist.innerHTML = createdPokemonCard(pokemon)).catch(error => {
-            let contente = document.getElementsByClassName("container")[0];
-            contente.setAttribute("style", "justify-content: center;padding: 2rem; ")
-            pokeapi.loadMoreBtn.setAttribute("style", "display:none;")
-            pokemonlist.parentElement.removeChild(pokemonlist);
-            contente.innerHTML = `<div class="erro__pokemon" >
+        pokeapi.getPokemon(identifier).then(pokemon => pokemonlist.innerHTML = createdPokemonCard(pokemon))
+            .then(data => {
+                console.log(data);
+                console.log(pokemonlist.children.length);
+
+                if (pokemonlist.children.length == 1) {
+                    pokemonlist.setAttribute("style", "display: flex; justify-content: center")
+                    pokeapi.loadMoreBtn.innerText = "Reset"
+                    pokeapi.loadMoreBtn.addEventListener("click", () => window.location.reload())
+
+                }
+            })
+            .catch(error => {
+                let contente = document.getElementsByClassName("container")[0];
+                contente.setAttribute("style", "justify-content: center;padding: 2rem; ")
+                pokeapi.loadMoreBtn.setAttribute("style", "display:none;")
+                pokemonlist.setAttribute("style", "display:none;")
+                contente.innerHTML = `<div class="erro__pokemon" >
                 <p>ERRO AO CONSULTAR POKEMON</p>
                 <span>NOT FOUD</span> </div>`
-        })
+            })
     } catch (error) {
         console.log(error);
     }
@@ -100,6 +112,8 @@ function getPokemon(identifier) {
 
 btnSearch.addEventListener("click", () => {
     const pokemonValue = document.getElementById("pokemon__search").value
-    getPokemon(pokemonValue)
+    if (pokemonValue != "") {
+        getPokemon(pokemonValue)
+    }
 
 })
