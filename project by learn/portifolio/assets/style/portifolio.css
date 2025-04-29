@@ -1,0 +1,34 @@
+.portifolio__contente{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item__project__contente{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+.item__project__contente .title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.item__project__contente .title::before{
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-image: url("/assets/icons/github-icon.svg");
+    fill: #fff;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
