@@ -19,6 +19,7 @@
 .item__project__contente .title{
     font-size: 1.2rem;
     font-weight: 700;
+    margin-bottom: .5rem;
 }
 
 .item__project__contente .title::before{
@@ -28,7 +29,15 @@
     height: 1.5rem;
     background-repeat: no-repeat;
     background-image: url("/assets/icons/github-icon.svg");
-    fill: #fff;
     background-size: contain;
     margin-right: 0.5rem;
+}
+
+.item__project__contente a{
+    text-decoration: none;
+    color: #ecebeb;
+}
+
+.item__project__contente a:hover{
+    text-decoration: underline;
 }
