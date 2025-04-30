@@ -9,27 +9,27 @@
     "hardSkills": [
       {
         "name": "Flutter",
-        "logo": ""
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/flutter.svg"
       },
       {
         "name": "Java",
-        "logo": ""
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/java.svg"
       },
       {
         "name": "Python",
-        "logo": ""
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/python.svg"
       },
       {
         "name": "Postgresql",
-        "logo": ""
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/postgres.svg"
       },
       {
         "name": "Spring",
-        "logo": ""
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/spring.svg"
       },
       {
         "name": "Typescript",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        "logo": "https://raw.githubusercontent.com/JoseGoncalvess/Study_Web_JavaScript/refs/heads/main/project%20by%20learn/portifolio/assets/icons/languages/typescript.svg"
       }
     ],
     "softSkills": [
