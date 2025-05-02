@@ -36,6 +36,10 @@
     border-radius: 50%;
 }
 
+.header__span{
+    font-family:"Neue Machina" ;
+    font-size: 1.2rem;
+}
 .header__title {
     font-family: "Neue Machina", 'Segoe UI';
     text-align: center;
