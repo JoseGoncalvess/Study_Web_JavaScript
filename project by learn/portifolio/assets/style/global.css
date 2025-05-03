@@ -16,3 +16,17 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+.asignature{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.asignature img{
+max-width: 6rem;
+
+}

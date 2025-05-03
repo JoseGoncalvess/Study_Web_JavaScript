@@ -33,7 +33,7 @@ border-radius: 5px;
     width: 1.5rem;
     height: 1.5rem;
     background-repeat: no-repeat;
-    background-image: url("/assets/icons/github-icon.svg");
+    background-image: url("../icons/github-icon.svg");
     background-size: contain;
     margin-right: 0.5rem;
 }

@@ -1,6 +1,6 @@
 
 .container {
-    padding: 1rem;
+    padding: 4rem;
     margin: 1rem;
     border-radius: 5px;
     border: 1px solid #fff;
@@ -21,7 +21,7 @@
     width: 2rem;
     height: 2rem;
     
-    background-image: url("/assets/icons/more.svg");
+    background-image: url("../icons/more.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -64,7 +64,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    /* background-image: url("/assets/icons/location.svg"); */
+    /* background-image: url("../icons/location.svg"); */
     background-size: contain;
     display: inline-block;
     margin-right: 0.5rem;
@@ -77,7 +77,7 @@
 
 
 .header__informations .person::before {
-    background-image: url("/assets/icons/person.svg");
+    background-image: url("../icons/person.svg");
 }
 
 .header__informations .email::before {
@@ -85,7 +85,7 @@
 }
 
 .header__informations .phone::before {
-    background-image: url("/assets/icons/phone.svg");
+    background-image: url("../icons/phone.svg");
 }
 
 .header__informations .location::before {
@@ -96,7 +96,7 @@
 
 .container::before {
     content: "";
-    background-image: url("/assets/img/backgroud.svg");
+    background-image: url("../img/backgroud.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 80vh;
@@ -109,7 +109,7 @@
 
 .container::after {
     content: "";
-    background-image: url("/assets/img/backgroud.svg");
+    background-image: url("../img/backgroud.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 187vw;
