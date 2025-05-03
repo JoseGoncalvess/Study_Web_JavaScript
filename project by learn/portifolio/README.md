@@ -1,6 +1,6 @@
 # Formação JavaScript Developer
 
-![Logo Formação](assets\img\curse.png)
+![Logo Formação](assets/img/curse.png)
 
 O objetivo deste projeto foi demonstrar minhas habilidades em desenvolvimento web, criando uma interface moderna e interativa.
 
@@ -8,7 +8,7 @@ Este é o meu portfólio desenvolvido utilizando **JavaScript, CSS e HTML**, com
 
 ## 📌 Meu Portfólio
 
-![Screenshot do Portfólio](assets\img\Web_portifolio.png)
+![Screenshot do Portfólio](assets/img/Web_portifolio.png)
 
 ## 🚀 Tecnologias Utilizadas
 
