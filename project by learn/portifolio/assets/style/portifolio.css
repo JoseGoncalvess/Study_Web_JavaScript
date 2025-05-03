@@ -12,9 +12,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
+.item__project__contente:hover{
+background-color:#4c4d8dd0 ;
+border-radius: 5px;
+}
+
 
 .item__project__contente .title{
     font-size: 1.2rem;
