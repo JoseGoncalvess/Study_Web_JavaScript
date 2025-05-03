@@ -8,6 +8,6 @@ async function getProfile() {
 async function createdProfile() {
     const result = await getProfile()
 
-    const profile = new Profile(result.name, result.photo, result.job, result.location, result.phone, result.email, result.skills, result.portifolio, result.languages, result.professionalExperience)
+    const profile = new Profile(result.name, result.photo, result.job, result.location, result.phone, result.email, result.skills, portfolio = result.portfolio, result.languages, result.professionalExperience)
     return profile
 }

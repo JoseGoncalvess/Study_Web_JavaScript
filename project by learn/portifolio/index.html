@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,91 +21,53 @@
 
 <body>
     <main class="container">
-        <header class="container__herader">
-            <img id="profile.img" class="photo" width="200px" alt="Foto de perfil do gonçalves" />
-            <h1 id="profile.name" class="header__title">carregando...</h1>
-            <div class="header__informations">
-                <p id="profile.position" class="person">carregando...</p>
-                <p id="profile.location" class="location">carregando...</p>
-                <p id="profile.phone" class="phone">carregando...</p>
-                <p id="profile.email" class="email">carregando...</p>
-            </div>
+    <header class="container__herader">
+        <img id="profile.img" class="photo" width="200px" alt="Foto de perfil do gonçalves" />
+        <h1 id="profile.name" class="header__title">carregando...</h1>
+        <div class="header__informations">
+            <p id="profile.position" class="person">carregando...</p>
+            <p id="profile.location" class="location">carregando...</p>
+            <p id="profile.phone" class="phone">carregando...</p>
+            <p id="profile.email" class="email">carregando...</p>
+        </div>
         </header>
 
-        <section class="acordeon">
-            <button type="button" class="trigger">Skils</button>
-            <div class="contente__acordeon">
-                <div class="tolls__skils">
-                    <section class="tools">
-                        <h3>Habilidades profissionais:</h3>
-                        <ul class="tools__content">
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/flutter.svg" alt="Flutter" />
-                            </li>
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/java.svg" alt="Java" />
-                            </li>
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/python.svg" alt="Python " />
-                            </li>
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/postgres.svg" alt="postgresql" />
-                            </li>
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/spring.svg" alt="spring" />
-                            </li>
-                            <li class="tecnology">
-                                <img src="assets/icons/languages/typescript.svg" alt="typescript" />
-                            </li>
-                        </ul>
-                    </section>
+    <section class="acordeon">
+        <button type="button" class="trigger">Skils</button>
+        <div class="contente__acordeon">
+            <div class="tolls__skils">
+                <section class="tools">
+                    <h3>Habilidades profissionais:</h3>
+            <ul id="profile.tool" class="tools__content"></ul>
+            </section>
 
-                    <section class="personal__skills">
-                        <h3>Habilidades pessoais:</h3>
-                        <ul id="profile.skills" class="skills"></ul>
-                    </section>
-                </div>
+            <section class="personal__skills">
+                <h3>Habilidades pessoais:</h3>
+                <ul id="profile.skills" class="skills"></ul>
+            </section>
             </div>
+            </div>
+            </section>
+
+    <section class="acordeon">
+        <button type="button" class="trigger">Idiomas</button>
+        <div class="contente__acordeon">
+            <ul id="profile.languagens" class="list__contente__acordeon"></ul>
+        </div>
+    </section>
+
+    <section class="acordeon">
+        <button type="button" class="trigger">Portifolio</button>
+        <div class="contente__acordeon open">
+        <ul id="profile.portifolio" class="portifolio__contente"></ul>
+        </div>
         </section>
 
-        <section class="acordeon">
-            <button type="button" class="trigger">Idiomas</button>
-            <div class="contente__acordeon">
-                <ul id="profile.languagens" class="list__contente__acordeon"></ul>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button type="button" class="trigger">Portifolio</button>
-            <div class="contente__acordeon open">
-                <ul class="portifolio__contente">
-                    <li class="item__project__contente">
-                        <span class="title">CRIADNO APP DE LEMBRENTE</span>
-                        <a href="http://google.com" target="_blank"> www.gloogle.com</a>
-                    </li>
-                    <li class="item__project__contente">
-                        <span class="title">CRIADNO APP DE LEMBRENTE</span>
-                        <a href="http://google.com" target="_blank"> www.gloogle.com</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button type="button" class="trigger">Experiência Profissional</button>
-            <div class="contente__acordeon open">
-                <ul class="experience__contente">
-                    <li class="item__experience__contente">
-                        <span class="title__experience">Front-end Developer / dio.me</span>
-                        <span class="time">Jan 2020 - Current</span>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
-                            in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
-                            soluta ea et odio, unde doloremque repellendus iure, iste.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+    <section class="acordeon">
+        <button type="button" class="trigger">Experiência Profissional</button>
+        <div class="contente__acordeon open">
+        <ul id="profile.experience" class="experience__contente"></ul>
+        </div>
         </section>
     </main>
     <script src="./core/service/profile_service.js" defer></script>
@@ -114,5 +75,4 @@
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/acordeon.js" defer></script>
 </body>
-
 </html>

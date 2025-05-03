@@ -10,10 +10,10 @@ class Profile {
         hardSkills: [],
         softSkills: []
     };
-    portifolio = [];
+    portfolio;
     professionalExperience = [];
 
-    constructor(name, photo, job_position, location, phone, email, skills, portifolio, languages, professionalExperience) {
+    constructor(name, photo, job_position, location, phone, email, skills, portfolio, languages, professionalExperience) {
         this.name = name;
         this.photo = photo;
         this.job_position = job_position;
@@ -22,7 +22,7 @@ class Profile {
         this.email = email;
         this.skills = skills;
         this.languages = languages;
-        this.portifolio = portifolio;
+        this.portfolio = portfolio;
         this.skills = skills;
         this.professionalExperience = professionalExperience;
     }
